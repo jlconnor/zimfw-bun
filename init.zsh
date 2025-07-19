@@ -1,4 +1,6 @@
-# This is example code.
-# This will be executed when this module is initialized during Zsh startup.
+# bun completions
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
-print "executed code in ${0}"
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
